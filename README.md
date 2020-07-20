@@ -19,7 +19,7 @@ PARÂMETROS URL: sku e ddd.
 
 #### API
 `
-curl --location --request POST 'https://catalogo-vivo.automatuslab.com/api/Catalogo/DisponibilidadeMovel' \
+curl --location --request POST 'https://catalogo.automatuslab.com/api/Catalogo/DisponibilidadeMovel' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 	"uf": null,
