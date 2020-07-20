@@ -2,10 +2,21 @@
 
 ## Objetivo:
 
+Queremos conhecer, através deste teste, como você organiza os arquivos, o código e sua lógica na resolução do problema proposto.
+
+- 1º Faça um fork deste repositório
+- 2º Desenvolva sua solução
+- 3º Abra uma pull-request com a solução final
+
 ## ESCOPO
 ### TELA INICIAL
+
+
 Ao carregar a página inicial o projeto deverá recuperar as informações de regionalização e da oferta enviadas na URL e requisitar a API abaixo:
 PARÂMETROS URL: sku e ddd.
+
+![tela inicial](https://raw.githubusercontent.com/automatuslab/vuejs-challenge/master/001.png)
+
 #### API
 `
 curl --location --request POST 'https://catalogo-vivo.automatuslab.com/api/Catalogo/DisponibilidadeMovel' \
@@ -33,10 +44,12 @@ Na tela inicial também deverá constar um formulário com três campos e estes 
 
 As informações capturadas no formulário da página inicial devem ser mantidas afim de exibição na próxima tela.
 
-#### TELA SECUNDÁRIA
+#### TELA FINAL
 
 Nesta segunda tela deve contemplar a seguinte mensagem:
 SE A LINHA INFORMADA NO FORMULÁRIO ANTERIOR FOR UM CELULAR:
+
+![OVERVIEW DA SEGUNDA TELA](https://raw.githubusercontent.com/automatuslab/vuejs-challenge/master/002.png)
 
 [NOME DO CLIENTE], ótima escolha!
 O plano [NOME DO PLANO] no valor mensal de [VALOR DO PLANO] será ativado na sua linha [CELULAR CLIENTE]
@@ -50,11 +63,20 @@ O plano [NOME DO PLANO] no valor mensal de [VALOR DO PLANO] será ativado em um 
 
 Nesta tela também deve existir um **select** com algumas opções de planos para simulação de mudança de "carrinho".
 
-**OPÇÕES**
-**SKU**         | **Plano**
-CTRL005DN  | VIVO CONTROLE DIGITAL 2GB
-CTRL009DN  | VIVO CONTROLE DIGITAL 3,5GB
-CTRL004CN  | VIVO CONTROLE CARTÃO 3,5GB
-CTRL007DE   | VIVO CONTROLE DIGITAL 4GB
+##### OPÇÕES
+
+
+![SELECT](https://raw.githubusercontent.com/automatuslab/vuejs-challenge/master/003.png)
+
+
+**SKU** 	| **Plano**
+
+CTRL005DN  	| VIVO CONTROLE DIGITAL 2GB
+
+CTRL009DN  	| VIVO CONTROLE DIGITAL 3,5GB
+
+CTRL004CN  	| VIVO CONTROLE CARTÃO 3,5GB
+
+CTRL007DE   	| VIVO CONTROLE DIGITAL 4GB
 
 Quando selecionado um sku diferente do que o cliente escolheu, deve-se consultar o catálogo recuperado na tela anterior e atualizar a mensagem inicial com o nome do plano e valor mensal.
