@@ -18,7 +18,7 @@ PARÂMETROS URL: sku e ddd.
 ![tela inicial](https://raw.githubusercontent.com/automatuslab/vuejs-challenge/master/001.png)
 
 #### API
-`
+```
 curl --location --request POST 'https://catalogo.automatuslab.com/api/Catalogo/DisponibilidadeMovel' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -27,7 +27,7 @@ curl --location --request POST 'https://catalogo.automatuslab.com/api/Catalogo/D
 	"ddd": 21,
 	"view": ""
 }'
-`
+```
 
 Do retorno da API catálogo, deverá ser filtrado pelo parâmetro sku recebido na URL e exibido as seguintes informações do plano em tela:
 
